@@ -356,6 +356,7 @@ function compileResources() {
         }
     }
     div.append("div").attr("id", "blurrer");
+    d3.select("#playbutton").style("display", "inline")
 }
 
 /**

@@ -125,6 +125,7 @@
     cursor: pointer;
     transition-duration:.4s;
     opacity: 0;
+    display: none;
 }
 
 #animation:hover #playbutton{
