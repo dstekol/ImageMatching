@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|AnyCPU">
+      <Configuration>Debug</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x86">
+      <Configuration>Debug</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|AnyCPU">
+      <Configuration>Release</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+      <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+      <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x86">
+      <Configuration>Release</Configuration>
+      <Platform>x86</Platform>
+      <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>0c4f5328-0484-44a3-a2ad-856fb5898b75</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '15.0'">
+    <VisualStudioVersion>15.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).Default.props" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).props" />
+  <PropertyGroup>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetPlatformVersion>10.0.16299.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.10586.0</TargetPlatformMinVersion>
+    <MinimumVisualStudioVersion>$(VersionNumberMajor).$(VersionNumberMinor)</MinimumVisualStudioVersion>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <PackageCertificateKeyFile>ImageMatching_TemporaryKey.pfx</PackageCertificateKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppxManifest Include="package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <Content Include="images\cat\01.jpg.pkl.json" />
+    <Content Include="images\cat\01_r.jpg" />
+    <Content Include="images\cat\02.jpg.pkl.json" />
+    <Content Include="images\cat\02_r.jpg" />
+    <Content Include="images\cat\03.jpg.pkl.json" />
+    <Content Include="images\cat\03_r.jpg" />
+    <Content Include="images\cat\04.jpg.pkl.json" />
+    <Content Include="images\cat\04_r.jpg" />
+    <Content Include="images\cat\05.jpg.pkl.json" />
+    <Content Include="images\cat\05_r.jpg" />
+    <Content Include="images\cat\06.jpg.pkl.json" />
+    <Content Include="images\cat\06_r.jpg" />
+    <Content Include="images\cat\07.jpg.pkl.json" />
+    <Content Include="images\cat\07_r.jpg" />
+    <Content Include="images\cat\08.jpg.pkl.json" />
+    <Content Include="images\cat\08_r.jpg" />
+    <Content Include="images\cat\09.jpg.pkl.json" />
+    <Content Include="images\cat\09_r.jpg" />
+    <Content Include="images\cat\10.jpg.pkl.json" />
+    <Content Include="images\cat\10_r.jpg" />
+    <Content Include="images\city\01.jpg.pkl.json" />
+    <Content Include="images\city\01_r.jpg" />
+    <Content Include="images\city\02.jpg.pkl.json" />
+    <Content Include="images\city\02_r.jpg" />
+    <Content Include="images\city\03.jpg.pkl.json" />
+    <Content Include="images\city\03_r.jpg" />
+    <Content Include="images\city\04.jpg.pkl.json" />
+    <Content Include="images\city\04_r.jpg" />
+    <Content Include="images\city\05.jpg.pkl.json" />
+    <Content Include="images\city\05_r.jpg" />
+    <Content Include="images\city\06.jpg.pkl.json" />
+    <Content Include="images\city\06_r.jpg" />
+    <Content Include="images\city\07.jpg.pkl.json" />
+    <Content Include="images\city\07_r.jpg" />
+    <Content Include="images\city\08.jpg" />
+    <Content Include="images\city\08.jpg.pkl.json" />
+    <Content Include="images\city\08_r.jpg" />
+    <Content Include="images\city\09.jpg.pkl.json" />
+    <Content Include="images\city\09_r.jpg" />
+    <Content Include="images\city\10.jpg.pkl.json" />
+    <Content Include="images\city\10_r.jpg" />
+    <Content Include="images\dog\01.jpg.pkl.json" />
+    <Content Include="images\dog\01_r.jpg" />
+    <Content Include="images\dog\02.jpg.pkl.json" />
+    <Content Include="images\dog\02_r.jpg" />
+    <Content Include="images\dog\03.jpg.pkl.json" />
+    <Content Include="images\dog\03_r.jpg" />
+    <Content Include="images\dog\04.jpg.pkl.json" />
+    <Content Include="images\dog\04_r.jpg" />
+    <Content Include="images\dog\05.jpg.pkl.json" />
+    <Content Include="images\dog\05_r.jpg" />
+    <Content Include="images\dog\06.jpg.pkl.json" />
+    <Content Include="images\dog\06_r.jpg" />
+    <Content Include="images\dog\07.jpg.pkl.json" />
+    <Content Include="images\dog\07_r.jpg" />
+    <Content Include="images\dog\08.jpg.pkl.json" />
+    <Content Include="images\dog\08_r.jpg" />
+    <Content Include="images\dog\09.jpg.pkl.json" />
+    <Content Include="images\dog\09_r.jpg" />
+    <Content Include="images\dog\10.jpg.pkl.json" />
+    <Content Include="images\dog\10_r.jpg" />
+    <Content Include="images\dolphin\01.jpg.pkl.json" />
+    <Content Include="images\dolphin\01_r.jpg" />
+    <Content Include="images\dolphin\02.jpg.pkl.json" />
+    <Content Include="images\dolphin\02_r.jpg" />
+    <Content Include="images\dolphin\03.jpg.pkl.json" />
+    <Content Include="images\dolphin\03_r.jpg" />
+    <Content Include="images\dolphin\04.jpg.pkl.json" />
+    <Content Include="images\dolphin\04_r.jpg" />
+    <Content Include="images\dolphin\05.jpg.pkl.json" />
+    <Content Include="images\dolphin\05_r.jpg" />
+    <Content Include="images\dolphin\06.jpg.pkl.json" />
+    <Content Include="images\dolphin\06_r.jpg" />
+    <Content Include="images\dolphin\07.jpg.pkl.json" />
+    <Content Include="images\dolphin\07_r.jpg" />
+    <Content Include="images\dolphin\08.jpg.pkl.json" />
+    <Content Include="images\dolphin\08_r.jpg" />
+    <Content Include="images\dolphin\09.jpg.pkl.json" />
+    <Content Include="images\dolphin\09_r.jpg" />
+    <Content Include="images\dolphin\10.jpg.pkl.json" />
+    <Content Include="images\dolphin\10_r.jpg" />
+    <Content Include="images\dump.js" />
+    <Content Include="images\gatto\01.jpg.pkl.json" />
+    <Content Include="images\gatto\01_r.jpg" />
+    <Content Include="images\gatto\02.jpg.pkl.json" />
+    <Content Include="images\gatto\02_r.jpg" />
+    <Content Include="images\gatto\03.jpg.pkl.json" />
+    <Content Include="images\gatto\03_r.jpg" />
+    <Content Include="images\gatto\04.jpg.pkl.json" />
+    <Content Include="images\gatto\04_r.jpg" />
+    <Content Include="images\gatto\04_r1.jpg" />
+    <Content Include="images\gatto\05.jpg.pkl.json" />
+    <Content Include="images\gatto\05_r.jpg" />
+    <Content Include="images\gatto\06.jpg.pkl.json" />
+    <Content Include="images\gatto\06_r.jpg" />
+    <Content Include="images\gatto\07.jpg.pkl.json" />
+    <Content Include="images\gatto\07_r.jpg" />
+    <Content Include="images\gatto\08.jpg.pkl.json" />
+    <Content Include="images\gatto\08_r.jpg" />
+    <Content Include="images\gatto\09.jpg.pkl.json" />
+    <Content Include="images\gatto\09_r.jpg" />
+    <Content Include="images\gatto\10.jpg.pkl.json" />
+    <Content Include="images\gatto\10_r.jpg" />
+    <Content Include="images\kittens\01.jpg.pkl.json" />
+    <Content Include="images\kittens\01_r.jpg" />
+    <Content Include="images\kittens\02.jpg.pkl.json" />
+    <Content Include="images\kittens\02_r.jpg" />
+    <Content Include="images\kittens\03.jpg.pkl.json" />
+    <Content Include="images\kittens\03_r.jpg" />
+    <Content Include="images\kittens\04.jpg.pkl.json" />
+    <Content Include="images\kittens\04_r.jpg" />
+    <Content Include="images\kittens\05.jpg.pkl.json" />
+    <Content Include="images\kittens\05_r.jpg" />
+    <Content Include="images\kittens\06.jpg.pkl.json" />
+    <Content Include="images\kittens\06_r.jpg" />
+    <Content Include="images\kittens\07.jpg.pkl.json" />
+    <Content Include="images\kittens\07_r.jpg" />
+    <Content Include="images\kittens\08.jpg.pkl.json" />
+    <Content Include="images\kittens\08_r.jpg" />
+    <Content Include="images\kittens\09.jpg.pkl.json" />
+    <Content Include="images\kittens\09_r.jpg" />
+    <Content Include="images\kittens\10.jpg.pkl.json" />
+    <Content Include="images\kittens\10_r.jpg" />
+    <Content Include="images\owl\01.jpg.pkl.json" />
+    <Content Include="images\owl\01_r.jpg" />
+    <Content Include="images\owl\02.jpg.pkl.json" />
+    <Content Include="images\owl\02_r.jpg" />
+    <Content Include="images\owl\03.jpg.pkl.json" />
+    <Content Include="images\owl\03_r.jpg" />
+    <Content Include="images\owl\04.jpg.pkl.json" />
+    <Content Include="images\owl\04_r.jpg" />
+    <Content Include="images\owl\05.jpg.pkl.json" />
+    <Content Include="images\owl\05_r.jpg" />
+    <Content Include="images\owl\06.jpg.pkl.json" />
+    <Content Include="images\owl\06_r.jpg" />
+    <Content Include="images\owl\07.jpg.pkl.json" />
+    <Content Include="images\owl\07_r.jpg" />
+    <Content Include="images\owl\08.jpg.pkl.json" />
+    <Content Include="images\owl\08_r.jpg" />
+    <Content Include="images\owl\09.jpg.pkl.json" />
+    <Content Include="images\owl\09_r.jpg" />
+    <Content Include="images\owl\10.jpg.pkl.json" />
+    <Content Include="images\owl\10_r.jpg" />
+    <Content Include="images\play.svg" />
+    <Content Include="images\raccoon\01.jpg.pkl.json" />
+    <Content Include="images\raccoon\01_r.jpg" />
+    <Content Include="images\raccoon\02.jpg.pkl.json" />
+    <Content Include="images\raccoon\02_r.jpg" />
+    <Content Include="images\raccoon\03.jpg.pkl.json" />
+    <Content Include="images\raccoon\03_r.jpg" />
+    <Content Include="images\raccoon\04.jpg.pkl.json" />
+    <Content Include="images\raccoon\04_r.jpg" />
+    <Content Include="images\raccoon\05.jpg.pkl.json" />
+    <Content Include="images\raccoon\05_r.jpg" />
+    <Content Include="images\raccoon\06.jpg.pkl.json" />
+    <Content Include="images\raccoon\06_r.jpg" />
+    <Content Include="images\raccoon\07.jpg.pkl.json" />
+    <Content Include="images\raccoon\07_r.jpg" />
+    <Content Include="images\raccoon\08.jpg.pkl.json" />
+    <Content Include="images\raccoon\08_r.jpg" />
+    <Content Include="images\raccoon\09.jpg.pkl.json" />
+    <Content Include="images\raccoon\09_r.jpg" />
+    <Content Include="images\raccoon\10.jpg.pkl.json" />
+    <Content Include="images\raccoon\10_r.jpg" />
+    <Content Include="images\silver\01.jpg.pkl.json" />
+    <Content Include="images\silver\01_r.jpg" />
+    <Content Include="images\silver\02.jpg.pkl.json" />
+    <Content Include="images\silver\02_r.jpg" />
+    <Content Include="images\silver\03.jpg.pkl.json" />
+    <Content Include="images\silver\03_r.jpg" />
+    <Content Include="images\silver\04.jpg.pkl.json" />
+    <Content Include="images\silver\04_r.jpg" />
+    <Content Include="images\silver\05.jpg.pkl.json" />
+    <Content Include="images\silver\05_r.jpg" />
+    <Content Include="images\silver\06.jpg.pkl.json" />
+    <Content Include="images\silver\06_r.jpg" />
+    <Content Include="images\silver\07.jpg.pkl.json" />
+    <Content Include="images\silver\07_r.jpg" />
+    <Content Include="images\silver\08.jpg.pkl.json" />
+    <Content Include="images\silver\08_r.jpg" />
+    <Content Include="images\silver\09.jpg.pkl.json" />
+    <Content Include="images\silver\09_r.jpg" />
+    <Content Include="images\silver\10.jpg.pkl.json" />
+    <Content Include="images\silver\10_r.jpg" />
+    <Content Include="images\tractor\01.jpg.pkl.json" />
+    <Content Include="images\tractor\01_r.jpg" />
+    <Content Include="images\tractor\02.jpg.pkl.json" />
+    <Content Include="images\tractor\02_r.jpg" />
+    <Content Include="images\tractor\03.jpg.pkl.json" />
+    <Content Include="images\tractor\03_r.jpg" />
+    <Content Include="images\tractor\04.jpg.pkl.json" />
+    <Content Include="images\tractor\04_r.jpg" />
+    <Content Include="images\tractor\05.jpg.pkl.json" />
+    <Content Include="images\tractor\05_r.jpg" />
+    <Content Include="images\tractor\06.jpg.pkl.json" />
+    <Content Include="images\tractor\06_r.jpg" />
+    <Content Include="images\tractor\07.jpg.pkl.json" />
+    <Content Include="images\tractor\07_r.jpg" />
+    <Content Include="images\tractor\08.jpg.pkl.json" />
+    <Content Include="images\tractor\08_r.jpg" />
+    <Content Include="images\tractor\09.jpg.pkl.json" />
+    <Content Include="images\tractor\09_r.jpg" />
+    <Content Include="images\tractor\10.jpg.pkl.json" />
+    <Content Include="images\tractor\10_r.jpg" />
+    <Content Include="images\tree\01.jpg.pkl.json" />
+    <Content Include="images\tree\01_r.jpg" />
+    <Content Include="images\tree\02.jpg.pkl.json" />
+    <Content Include="images\tree\02_r.jpg" />
+    <Content Include="images\tree\03.jpg.pkl.json" />
+    <Content Include="images\tree\03_r.jpg" />
+    <Content Include="images\tree\04.jpg.pkl.json" />
+    <Content Include="images\tree\04_r.jpg" />
+    <Content Include="images\tree\05.jpg.pkl.json" />
+    <Content Include="images\tree\05.png" />
+    <Content Include="images\tree\05_r.jpg" />
+    <Content Include="images\tree\06.jpg.pkl.json" />
+    <Content Include="images\tree\06_r.jpg" />
+    <Content Include="images\tree\07.jpg.pkl.json" />
+    <Content Include="images\tree\07_r.jpg" />
+    <Content Include="images\tree\08.jpg.pkl.json" />
+    <Content Include="images\tree\08_r.jpg" />
+    <Content Include="images\tree\09.jpg.pkl.json" />
+    <Content Include="images\tree\09_r.jpg" />
+    <Content Include="images\tree\10.jpg.pkl.json" />
+    <Content Include="images\tree\10_r.jpg" />
+    <Content Include="index.html" />
+    <Content Include="images\LockScreenLogo.scale-200.png" />
+    <Content Include="images\SplashScreen.scale-200.png" />
+    <Content Include="images\Square150x150Logo.scale-200.png" />
+    <Content Include="images\Square44x44Logo.scale-200.png" />
+    <Content Include="images\Square44x44Logo.targetsize-24_altform-unplated.png" />
+    <Content Include="images\StoreLogo.png" />
+    <Content Include="images\Wide310x150Logo.scale-200.png" />
+    <Content Include="js\main.js" />
+    <Content Include="css\default.css" />
+    <None Include="ImageMatching_TemporaryKey.pfx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).targets" />
+  <!-- To modify your build process, add your task inside one of the targets below then uncomment
+       that target and the DisableFastUpToDateCheck PropertyGroup. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <PropertyGroup>
+    <DisableFastUpToDateCheck>true</DisableFastUpToDateCheck>
+  </PropertyGroup>
+  -->
+</Project>

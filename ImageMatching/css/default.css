@@ -1,0 +1,136 @@
+﻿body {
+    margin: 0;
+    background: #222;
+    min-width: 960px;
+    background-color: white;
+}
+
+.wordcontainer {
+    text-align: right;
+    font-weight: bold;
+    padding-top: 20px;
+    left: -11%;
+}
+
+.arrayimage {
+    position: absolute;
+    width: 9.5%;
+    height: 9.5%;
+    margin: 1px;
+    border-radius: 2px;
+}
+
+.sampimage {
+    position: absolute;
+    width: 9.5%;
+    height: 50%;
+    margin: 1px;
+    border-radius: 2px;
+    border: 1px solid black;
+}
+
+#blurrer {
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+    -o-filter: blur(10px);
+    filter: progid: DXImageTransform.Microsoft.Blur(PixelRadius='10');
+    background: linear-gradient(rgba(255,255,255,0), white);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+#animation {
+    border: 1px solid #dddddd;
+    width: 70%;
+    position: relative;
+    height: 80vh;
+    left: 10vw;
+}
+
+#sample {
+    border: 1px solid #dddddd;
+    width: 70%;
+    height: 15vh;
+    position: relative;
+    left: 10vw;
+}
+
+.slide {
+    position: absolute;
+    left: 97%;
+    top: 45%;
+    transform: rotate(-90deg);
+    -webkit-appearance: none;
+    width: 12%;
+    background: #d3d3d3;
+    outline: none;
+}
+
+#sliderlabel {
+    position: absolute;
+    left: 97%;
+    top: 115%;
+    width: 12%;
+    text-align: center;
+    outline: none;
+    //display: none;
+}
+
+#slider {
+    opacity: 0.7;
+    height: 15px;
+    border-radius: 5px;
+    //display: none;
+}
+
+#slidemax {
+    height: 15px;
+    background-color: rgba(255, 255, 255, 0);
+    height: 20px;
+    //display: none;
+}
+
+#slider::-webkit-slider-thumb {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: green;
+    cursor: pointer;
+    opacity: 1;
+    //display: none;
+}
+
+#slidemax::-webkit-slider-thumb {
+    width: 5px;
+    height: 25px;
+    background: black;
+    cursor: pointer;
+    opacity: 1;
+    //display: none;
+}
+
+.playcontainer{
+    z-index: 2;
+    text-align: center;
+    position: relative;
+    top: 70px;
+}
+
+#playbutton{
+    border-radius: 50%;
+    box-shadow: 10px 10px 10px grey;
+    cursor: pointer;
+    transition-duration:.4s;
+    opacity: 0;
+}
+
+#animation:hover #playbutton{
+    opacity: 1;
+}
+
+#playbutton:hover{
+    box-shadow: 15px 15px 15px grey;
+}
