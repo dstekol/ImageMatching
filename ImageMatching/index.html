@@ -5,10 +5,9 @@
 <body>
     <div id="container" style="position:relative;">
         <div id="sample">
-            <div class="wordcontainer arrayimage">gatto</div>
+            <div class="wordcontainer arrayimage" id="foreignwordholder"></div>
             <input type="range" min="0" max="1" value="0" id="slidemax" class="slide" step=".001" disabled>
             <input type="range" min="0" max="1" value="0" id="slider" class="slide" step=".001" disabled>
-            <!--<button onclick="setup()">Reset</button>-->
             <div id="sliderlabel"></div>
         </div>
         <div id="animation">
@@ -19,7 +18,7 @@
     </div>
     
     <script src="https://d3js.org/d3.v5.min.js"></script>
-    <script src="images/dump.js"></script>
+    <script src="images/demofiles.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

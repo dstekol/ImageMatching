@@ -57,7 +57,6 @@ var process=-1;
 nativeWords = ["owl", "tree", "raccoon", "silver", "cat", "tractor", "dog", "kittens", "city", "dolphin"];
 
 compileResources();
-//setup();
 
 /**
  * Initializes image array and begins animation
@@ -117,7 +116,8 @@ function processRow() {
 
     
     //updates slider
-    sample.select("#slider").transition().duration(1000).attr("value", imageSimilarity);
+    //sample.select("#slider").transition().duration(1000).attr("value", imageSimilarity);
+    document.getElementById("slider").value = imageSimilarity;
     sample.select("#sliderlabel").text(Math.round(imageSimilarity*1000)/1000);
 
     //checks whether the newly calculated similarity is max so far (and if so, updates max slider)
@@ -314,18 +314,37 @@ function displayBestMatch() {
  * */
 function compileResources() {
     var temp, ind;
+    var foreignWord = data.foreignword.word;
     for (var i = 0; i < numCols; i++) {
-        ind = i+1 < 10 ? "0" + (i+1) : "" + (i+1);
-        foreignPics.push("images/gatto/"+ind+"_r.jpg");
-        foreignPicVects.push(data["gatto"][i]);
-        nativePics.push([]);
-        nativePicVects.push([]);
-        for (var j = 0; j < 10; j++) {
-            ind = j + 1 < 10 ? "0" + (j + 1) : "" + (j + 1);
-            nativePics[i].push("images/" + nativeWords[i] + "/" + ind + "_r.jpg");
-            nativePicVects[i].push(data[nativeWords[i]][j]);
-        }
+        foreignPics.push("images/f_" + foreignWord + "/" + data.foreignword.files[i]);
+        foreignPicVects.push(data["foreignword"]["vectors"][i]);
     }
+
+    d3.select("#foreignwordholder").text(foreignWord);
+
+    var i = 0;
+    for (word in data) {
+        if (word != "foreignword") {
+            nativePics.push([]);
+            nativePicVects.push([]);
+
+            //adds word label to image row
+            div.append("div")
+                .text(word + " ")
+                .attr("class", "arrayimage wordcontainer row" + i)
+                .style("top", i + "0%");
+            
+            for (var j = 0; j < data[word]["files"].length; j++) {
+                nativePics[nativePics.length - 1].push("images/" + word + "/" + data[word]["files"][j]);
+                nativePicVects[nativePicVects.length-1].push(data[word]["vectors"][j]);
+            }
+            i++;
+        }
+        
+    }
+    
+
+
 
     for (var i = 0; i < numCols; i++) {
 
@@ -339,11 +358,7 @@ function compileResources() {
             .style("left", i + "0%")
             .style("top", "0%");
 
-        //adds word label to image row
-        div.append("div")
-            .text(nativeWords[i] + " ")
-            .attr("class", "arrayimage wordcontainer row" + i)
-            .style("top", i + "0%");
+        
 
         for (var j = 0; j < numCols; j++) {
 
@@ -356,7 +371,7 @@ function compileResources() {
         }
     }
     div.append("div").attr("id", "blurrer");
-    d3.select("#playbutton").style("display", "inline")
+    d3.select("#playbutton").style("display", "inline");
 }
 
 /**
