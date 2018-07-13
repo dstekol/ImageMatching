@@ -54,7 +54,7 @@ var sample;
 // id of the process launched by setInterval (used to stop the process)
 var process=-1;
 
-nativeWords = ["owl", "tree", "raccoon", "silver", "cat", "tractor", "dog", "kittens", "city", "dolphin"];
+//nativeWords = ["owl", "tree", "raccoon", "silver", "cat", "tractor", "dog", "kittens", "city", "dolphin"];
 
 compileResources();
 
@@ -291,10 +291,19 @@ function collapse() {
 function displayBestMatch() {
     var simIndices = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 
+    var label;
+
+    for (var i = 0; i < simTracker.length; i++) {
+        label = d3.select(".wordcontainer.row" + i); 
+        
+        label.text(label.text() + " (" + (Math.round(simTracker[i] * 1000) / 1000)+")");
+    }
+
     //sorts row indices according to similarity
     simIndices.sort(function (a, b) {
         return simTracker[b] - simTracker[a];
     });
+
 
     //puts each row in its ranked spot
     for (var i = 0; i < numCols; i++) {

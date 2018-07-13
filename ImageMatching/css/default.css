@@ -8,8 +8,11 @@
 .wordcontainer {
     text-align: right;
     font-weight: bold;
-    padding-top: 20px;
-    left: -11%;
+    padding-top: 5px;
+    //left: -11%;
+    right: 102%;
+    width: auto !important;
+    //border: 1px solid black;
 }
 
 .arrayimage {
