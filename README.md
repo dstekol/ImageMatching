@@ -1,3 +1,6 @@
+This project serves as a demo of the Learning Translations via Images research project. 
+IT IS MEANT ONLY FOR MEMBERS OF THE NLP LAB AT THE UNIVERSITY OF PENNSYLVANIA.
+
 Demo is initiated by opening index.html file.
 
 If you wish to replace the images, you should use the ImageVectorPacker program to extract images from the nlpgrid, 
