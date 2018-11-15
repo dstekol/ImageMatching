@@ -1,5 +1,5 @@
 This project serves as a demo of the Learning Translations via Images research project. 
-IT IS MEANT ONLY FOR MEMBERS OF THE NLP LAB AT THE UNIVERSITY OF PENNSYLVANIA.
+It is meant for use by members of the NLP lab at the University of Pennsylvania.
 
 Demo is initiated by opening index.html file.
 
